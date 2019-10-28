@@ -7,6 +7,9 @@
   <remote  name="superior"
            fetch="https://github.com/SuperiorOS"
            revision="refs/heads/pie" />
+  <remote  name="sos"
+           fetch="https://github.com/jintae1"
+           revision="refs/heads/pie" />
 
   <remote  name="SuperiorOS-Devices"
            fetch="https://github.com/SuperiorOS-Devices" 
@@ -16,8 +19,8 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-16.0" />
 
-  <project path="manifest" name="manifest" remote="superior" />
-  <project path="build/make" name="android_build" remote="superior" >
+  <project path="manifest" name="manifest" remote="sos" />
+  <project path="build/make" name="android_build" remote="sos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -37,10 +40,10 @@
   <project path="bionic" name="android_bionic" remote="superior" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="superior" />
   <project path="development" name="android_development" remote="superior" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="superior" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="superior" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="sos" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="sos" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="superior" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="superior" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="sos" />
   <project path="frameworks/support" name="android_frameworks_support" remote="superior" />
   <project path="frameworks/aoscp" name="android_frameworks_aoscp" remote="superior" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="superior" />
